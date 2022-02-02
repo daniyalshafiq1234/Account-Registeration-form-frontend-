@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audition Form</title>'
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body onLoad="autoFillDate()">
+
+
+  <h1 class="container">Audition Form</h1>
+
+  <form class="container" style="margin: auto;">
+    <div class="row">
+      <div class="col-sm-4">
+        <label for="Name">Name</label>
+        <input class="form-control form-control-lg" type="text" required>
+      </div>
+      <div class="col-sm-4">
+        <label for="Name">Father/Husband Name</label>
+        <input class="form-control form-control-lg" type="text" id="nameField">
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-sm-6">
+        <label for="Email">Email Address</label>
+        <input class="form-control form-control-lg" type="Email" name="email" id="email" required>
+      </div>
+      <div class="col-sm-4">
+        <label for="Phone No">Phone No</label>
+        <input class="form-control form-control-lg" type="text">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <label for="Gender">Gender</label>
+        <select class="form-select" aria-label="Default select example">
+          <option value="1">Male</option>
+          <option value="2">Female</option>
+          <option value="3">Other</option>
+        </select>
+      </div>
+      <div class="col-sm-4">
+        <label for="City">City</label>
+        <input class="form-control form-control-lg" type="text">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-3">
+        <label for="C.N.I.C #">C.N.I.C ##</label>
+        <input class="form-control form-control-lg" type="number" name="C.N.I.C #" id="cnic">
+      </div>
+      <div class="col-sm-6">
+        <label for="Address">Address</label>
+        <input class="form-control form-control-lg" type="text">
+      </div>
+    </div>
+
+    <!-- age and complection -->
+    <div class="row">
+      <div class="col-sm-4">
+        <label for="Age">Age</label>
+        <input class="form-control form-control-lg" type="number" name="age" id="age">
+      </div>
+      <div class="col-sm-4">
+        <label for="Complexion">Complexion</label>
+        <input class="form-control form-control-lg" type="text">
+      </div>
+    </div>
+
+    <!-- height eye color dress/outfit -->
+    <div class="row">
+      <div class="col-sm-3">
+        <label for="height">Height</label>
+        <input class="form-control form-control-lg" type="number" name="cnic" id="cnic">
+      </div>
+      <div class="col-sm-3">
+        <label for="eye color">eye color</label>
+        <input class="form-control form-control-lg" type="text">
+      </div>
+      <div class="col-sm-3">
+        <label for="Dress/Outfir Size">Dress/Outfit Size</label>
+        <input class="form-control form-control-lg" type="text">
+      </div>
+    </div>
+
+    <!-- Acting Experience  checkbox-->
+    <div class="row">
+      <div class="col">
+        <label for="Acting Experience ">Acting Experience </label><br />
+        <label for="no">No</label><br />
+        <input type="checkbox">
+        <div class="col-">
+          <label for="yes">yes</label><br />
+          <input type="checkbox">
+        </div>
+      </div>
+    </div>
+
+    <!-- If yes, for how long -->
+    <div class="row">
+      <div class="col-sm-8">
+        <label for="If yes, for how long">If yes, for how long</label>
+        <input class="form-control form-control-lg" type="text">
+      </div>
+    </div>
+
+
+    <!-- Project Name with Channel: 1. -->
+    <div class="row">
+      <div class="col-sm-3">
+        <label for="CNIC">Project Name with Channel: 1.#</label>
+        <input class="form-control form-control-lg" type="number" name="cnic" id="cnic">
+      </div>
+      <div class="col-sm-3">
+        <label for="Father Name">2.</label>
+        <input class="form-control form-control-lg" type="text">
+      </div>
+      <div class="col-sm-3">
+        <label for="Father Name">3.</label>
+        <input class="form-control form-control-lg" type="text">
+      </div>
+    </div>
+
+    <!-- Channel -->
+    <div class="row">
+      <div class="col-sm-3">
+        <label for="Channel">Channel</label>
+        <input class="form-control form-control-lg" type="number" name="cnic" id="cnic">
+      </div>
+      <div class="col-sm-3">
+        <label for="Father Name"></label>
+        <input class="form-control form-control-lg" type="text">
+      </div>
+      <div class="col-sm-3">
+        <label for="Father Name"></label>
+        <input class="form-control form-control-lg" type="text">
+      </div>
+    </div>
+
+    <!-- Please add work profile if available -->
+    <div class="row">
+      <div class="col-sm-8">
+        <label for="CNPlease add work profile if availableIC">Please add work profile if available#</label>
+        <input class="form-control form-control-lg" type="text">
+      </div>
+    </div>
+
+    <!-- Acting Expertise -->
+    <div class="row">
+      <div class="col-sm-6">
+        <label for="Acting Expertise">Acting Expertise</label> <br />
+        <input type="radio" name="sad" value="sad" id="sad">
+        <label for="sad">Sad</label>
+        <input type="radio" name="Emotional" value="Emotional" id="Emotional">
+        <label for="Emotional">Emotional</label>
+        <input type="radio" name="Comedy" value="Comedy" id="Comedy">
+        <label for="Comedy">Comedy</label>
+        <input type="radio" name="Romantic" value="Romantic" id="Romantic">
+        <label for="Romantic">Romantic</label>
+      </div>
+    </div>
+
+
+    <!-- Other -->
+    <div class="row">
+      <div class="col-sm-4">
+        <label for="Other">Other</label>
+        <input class="form-control form-control-lg" type="text">
+      </div>
+      <div class="col-sm-4">
+        <label for="Referred By">Referred By</label>
+        <select class="form-select" aria-label="Default select example">
+          <option value="1">Facebook</option>
+          <option value="2">Instagram </option>
+          <option value="1">Twitter</option>
+          <option value="1">Electronic Media</option>
+          <option value="3">Others</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- only checkbox -->
+    <input type="checkbox" name="agree" id="Agree" value="agree">
+    <label for=" * Agree with this term.">* Agree with this term.</label>
+
+    <!-- Please add work profile if available -->
+    <div class="row">
+      <div class="col-sm-10">
+        <textarea class="form-control" name="comment" form="userform">
+      </textarea>
+      </div>
+    </div>
+
+    <!-- Date -->
+    <div class="row">
+      <div class="col-sm-6">
+        <label for="Date">Date</label> <br />
+        <input class="form-control form-control-lg" type="date" name="date" id="DateField">
+      </div>
+    </div>
+
+    <!-- Button -->
+    <div class="row">
+      <div class="col-sm-6">
+        <button class="btn btn-warning">Submit</button>
+      </div>
+
+    </div>
+  </form>
+
+</body>
+
+</html>
